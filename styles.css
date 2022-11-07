@@ -7,22 +7,27 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     background-color: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }
 
 .container{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 350px;
-    height: max-content;
     border-radius: 15px;
     overflow: hidden;
     background: #fff;
     text-align: center;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .avatar__img{
@@ -54,7 +59,7 @@ body{
 .footer{
     display: flex;
     justify-content: space-evenly;
-    border-top: 1px solid hsl(0, 0%, 59%);
+    border-top: 1px solid hsl(0, 0%, 85%);
     margin-top: 10px;
     margin-bottom: 25px;
     padding-top: 30px;
@@ -71,6 +76,12 @@ body{
     letter-spacing: 2px;
 }
 
-.attribution{
-    
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+}
+
+.attribution a {
+    color: white;
 }
